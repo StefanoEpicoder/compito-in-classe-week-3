@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "compito in classe week 3", "compito in classe week 3\compito in classe week 3.csproj", "{CF2E9C6B-775D-476B-B077-89E6AB6E14C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF2E9C6B-775D-476B-B077-89E6AB6E14C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF2E9C6B-775D-476B-B077-89E6AB6E14C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF2E9C6B-775D-476B-B077-89E6AB6E14C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF2E9C6B-775D-476B-B077-89E6AB6E14C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7691B410-0B12-4B14-B34C-3BA30F845E2B}
+	EndGlobalSection
+EndGlobal

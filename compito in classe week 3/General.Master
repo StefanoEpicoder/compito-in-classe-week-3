@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="General.master.cs" Inherits="compito_in_classe_week_3.General" %>
+<!-- Questa direttiva indica che il file è un master page, specifica il linguaggio di programmazione (C#), l'abilitazione degli eventi automatici, il file di codice associato e la classe che lo rappresenta -->
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<!-- Questo tag indica che il contenuto del head è gestito dal server -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!-- Questo tag specifica il tipo di contenuto e la codifica dei caratteri della pagina -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <!-- Questo tag include il foglio di stile di bootstrap per la formattazione della pagina -->
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <title></title>
+    <!-- Questo tag indica il titolo della pagina, che può essere vuoto -->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header class="mb-5">
+        <!-- Questo tag indica l'intestazione della pagina, con una classe di bootstrap per il margine inferiore -->
+            <div class="divLogo">
+            <!-- Questo tag indica un contenitore per il logo a sinistra -->
+                <asp:Image ID="Logo1" runat="server" ImageUrl="~/Assets/Logo1.png" CssClass="Logo"/>
+                <!-- Questo tag indica un'immagine gestita dal server, con l'ID, l'URL e la classe specificati -->
+            </div>
+            <div class="divLink">
+            <!-- Questo tag indica un contenitore per i link di navigazione al centro -->
+                <button class="bottoneNavbar" type="button">
+                <!-- Questo tag indica un bottone con una classe personalizzata -->
+                    <asp:HyperLink ID="LinkHome" CssClass="LinkNavbar" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink></button>
+                    <!-- Questo tag indica un collegamento ipertestuale gestito dal server, con l'ID, la classe, l'URL e il testo specificati -->
+                <button class="bottoneNavbar" type="button">
+                    <asp:HyperLink ID="LinkCarrello" CssClass="LinkNavbar" runat="server" NavigateUrl="~/Carrello.aspx">Carrello</asp:HyperLink></button>
+            </div>
+            <div class="divLogo">
+                <asp:Image ID="Logo2" runat="server" ImageUrl="~/Assets/Logo1.png" CssClass="Logo"/>
+            </div>
+        </header>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <!-- Questo tag indica una regione in cui le pagine figlie possono inserire il proprio contenuto nel corpo -->
+
+        <footer class="d-flex justify-content-center align-items-center mt-5">
+            <p>Sito web realizzato da Stefano D'Antoni&reg;</p>
+        <!-- Questo tag indica il piè di pagina della pagina, con le classi di bootstrap per la disposizione, l'allineamento e il margine superiore -->
+            <!-- Questo tag indica un paragrafo con il testo e le classi di bootstrap per l'allineamento e il margine -->
+        </footer>
+    </form>
+</body>
+</html>
